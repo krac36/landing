@@ -38,3 +38,60 @@ div {
 }
 
 /* Custom design below! */
+@media (max-width: 414px) {
+  /* Adjustments for hero section */
+  .hero {
+    padding: 100px 0; /* Decrease padding for smaller screens */
+  }
+  .hero h2 {
+    font-size: 36px; /* Decrease font size for smaller screens */
+  }
+  .hero p {
+    font-size: 18px; /* Decrease font size for smaller screens */
+  }
+
+  /* Adjustments for container */
+  .container {
+    width: 90%; /* Set the width to 90% of the viewport width on mobile devices */
+    margin: auto; /* Center the container horizontally */
+  }
+
+  /* Adjustments for cards */
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start (left) */
+  }
+  .card {
+    width: calc(100% - 20px); /* Adjust width to fill the screen width and consider padding */
+    max-width: 300px; /* Set maximum width for the cards */
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    text-align: center; /* Center the text horizontally within the card */
+  }
+  .cards .card h2,
+  .cards .card h4,
+  .cards .card p {
+    text-align: center; /* Center the text horizontally within the .cards container */
+  }
+  .card img {
+    max-width: 100%; /* Set maximum width for images to prevent them from overflowing */
+    height: auto; /* Maintain aspect ratio of images */
+  }
+  .card p {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+  /* Adjustments for footer */
+  .footer {
+    padding: 30px; /* Decrease padding for smaller screens */
+  }
+  .footer a {
+    font-size: 24px; /* Decrease font size for smaller screens */
+  }
+  .footer p {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+}
