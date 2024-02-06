@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: 75% 25%;
   padding: 170px 0;
-  position: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
